@@ -1,0 +1,75 @@
+html,body{
+
+ max-width: 100vw;
+ overflow-x: hidden;
+}
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+  font-size: 1.3rem;
+}
+
+input {
+  font: inherit;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+input:hover {
+  box-shadow: 0 5px 5px #000;
+}
+.phoneFormat {
+  display: none;
+}
+.emailFormat {
+  display: none;
+}
+.invalid {
+  color: red;
+}
+.block {
+  display: block;
+}
+
+section {
+  width: 50%;
+  margin: 100px auto;
+  background-color: beige;
+  padding: 1em;
+
+}
+
+#textArea,
+#reset {
+  margin: 0.4em;
+  padding: 0.5em;
+}
+
+@media screen and (max-width:280px) {
+ section{
+  padding-left: 10px;
+  padding-right: 5px;
+ }
+ 
+ input{
+  width:250px
+ }
+
+ 
+}
+
+@media screen and (max-width:600px) {
+ section{
+  width:100%
+ }
+ 
+}
